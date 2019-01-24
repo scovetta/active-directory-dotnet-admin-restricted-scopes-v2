@@ -16,7 +16,7 @@ endpoint: AAD V2
 ### Overview
 
 Certain actions in the Azure Active Directory tenant are considered highly sensitive, such as deleting a user from the tenant, creating and managing applications, listing and assigning users to security groups.  Yet there are many valid reasons why applications need to perform these actions for their customers.  For this reason, some permissions are considered [admin restricted](https://docs.microsoft.com/en-us/azure/active-directory/develop/v2-permissions-and-consent#permission-types), and require a tenant administrator to approve their use in applications.  
-This sample application shows how to use the [Azure AD v2.0 endpoint](http://aka.ms/aadv2) to access data in the [Microsoft Graph](https://graph.microsoft.io) that requires [consent](https://docs.microsoft.com/en-us/azure/active-directory/develop/application-consent-experience) for permissions that have an administrative scope.
+This sample application shows how to use the [Azure AD v2.0 endpoint](https://aka.ms/aadv2) to access data in the [Microsoft Graph](https://graph.microsoft.io) that requires [consent](https://docs.microsoft.com/en-us/azure/active-directory/develop/application-consent-experience) for permissions that have an administrative scope.
 
 ![](ReadmeFiles/Topology.png)
 
@@ -45,7 +45,7 @@ To run this sample, you'll need:
 From your shell or command line:
 
 ```Shell
-git clone https://github.com/Azure-Samples/active-directory-dotnet-admin-restricted-scopes-v2.git`
+git clone https://github.com/Azure-Samples/active-directory-dotnet-admin-restricted-scopes-v2.git
 ```
 
 or download and extract the repository .zip file.
@@ -105,7 +105,7 @@ Open the solution in Visual Studio to configure the projects
 #### Configure the  project
 
 1. Open the `Utils\Globals.cs` file, and replace the following values:
-1. Replace the `clientId` value with the application ID you copied above during App Registration.
+1. Replace the `clientId` value with the Application ID you copied above during App Registration.
 1. Replace the `clientSecret` value with the application secret you copied above during App Registration.
 
 ### Step 4: Run the sample
@@ -134,7 +134,7 @@ the application gets the token, which MSAL.NET stores into the token cache (See 
 
 ## Community Help and Support
 
-Use [Stack Overflow](http://stackoverflow.com/questions/tagged/msal) to get support from the community.
+Use [Stack Overflow](https://stackoverflow.com/questions/tagged/msal) to get support from the community.
 Ask your questions on Stack Overflow first and browse existing issues to see if someone has asked your question before.
 Make sure that your questions or comments are tagged with [`adal` `msal` `dotnet`].
 
@@ -162,5 +162,5 @@ For more information, see MSAL.NET's [conceptual documentation](https://github.c
 - [Comparing the Azure AD v2.0 endpoint with the v1.0 endpoint](https://docs.microsoft.com/en-us/azure/active-directory/develop/azure-ad-endpoint-comparison)
 - [Problems with application consent](https://docs.microsoft.com/en-us/azure/active-directory/manage-apps/application-sign-in-problem-first-party-microsoft?%2F%3FWT.mc_id=AKA_MS_Apps_Troubleshooting_Link#problems-with-application-consent)
 
-For more information about how OAuth 2.0 protocols work in this scenario and other scenarios, see [Authentication Scenarios for Azure AD](http://go.microsoft.com/fwlink/?LinkId=394414).
+For more information about how OAuth 2.0 protocols work in this scenario and other scenarios, see [Authentication Scenarios for Azure AD](https://go.microsoft.com/fwlink/?LinkId=394414).
 
